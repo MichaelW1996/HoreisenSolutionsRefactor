@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico"> <!-- Added Favicon at top of page-->
+    <title>Horiseon Solutions</title> <!-- Changed title from generic name-->
 </head>
 
 <body>
-    <div class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+    <header> <!-- Changed div to header-->
+        <h1>Hori<span class="seo">seo</span>n</h1> <!-- Span changed to make different colour text-->
+        <nav> <!-- Changed to Nav for a nav bar-->
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -22,61 +23,64 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="hero"></div>
-    <div class="content">
-        <div class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+        </nav>
+    </header>
+<!-- Space added to improve readability between sections-->
+    <div class="hero"></div> <!-- Hero image, a background image-->
+    
+    <container> <!-- Changed div to container, this is the left articles-->
+        <article id="search-engine-optimization"> <!-- switched to article for text articles & applied an ID for sytling-->
+            <img src="./assets/images/search-engine-optimization.jpg" alt ="Image showing content, headings, mobile compatability, social media, link building & backlink, all in the wider context of search engine Optimization" class="float-left" /> <!--Alt text for image added-->
             <h2>Search Engine Optimization</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
-        </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+                <p> <!--Added indentation for readability-->
+                    The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                </p>
+        </article>
+        <article id="online-reputation-management"> <!-- Removed class, switched div for article-->
+            <img src="./assets/images/online-reputation-management.jpg" alt ="Image shows user checking statistics on a business's reputation" class="float-right"/> <!-- Added image alt text-->
             <h2>Online Reputation Management</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-        </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+                <p><!--Added indentation for readability-->
+                    The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+                </p>
+        </article><!--fixed indentation for readability-->
+        <article id="social-media-marketing" class="social-media-marketing">
+            <img src="./assets/images/social-media-marketing.jpg" alt="a table showing Collaboration on a soical media marketing strategy" class="float-left" /> <!--Alt image text added-->
             <h2>Social Media Marketing</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
-        </div>
-    </div>
-    <div class="benefits">
-        <div class="benefit-lead">
+                <p><!--Added indentation for readability-->
+                    Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+                </p>
+        </article>
+    </container>
+    <!-- Space for readability-->
+    <aside> <!-- Changed to aside as content is on one side, removed class, this is the parent to the benefit cards-->
+        <card> <!-- Removed class and changed to a card from div, class not needed as this can be styled from the parent element -->
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
+            <img src="./assets/images/lead-generation.png" alt="diagram showing leads being converted to profits"/> <!--Alt image text added-->
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
-        </div>
-        <div class="benefit-brand">
+        </card>
+        <card><!-- Removed class and changed to a card from div, class not needed as this can be styled from the parent element -->
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
+            <img src="./assets/images/brand-awareness.png" alt="Lightbulb headed business person to represent brand awareness" /> <!--Alt image text added-->
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
-        </div>
-        <div class="benefit-cost">
+        </card>
+        <card><!-- Removed class and changed to a card from div, class not needed as this can be styled from the parent element -->
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" />
+            <img src="./assets/images/cost-management.png" alt="illustation on machinery and coins to represnt cost management"/> <!--Alt image text added-->
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
-        </div>
-    </div>
-    <div class="footer">
+        </card>
+    </aside>
+    <footer> <!-- Changed div to footer-->
         <h2>Made with ❤️️ by Horiseon</h2>
-        <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
-    </div>
+            <p>
+                &copy; 2019 Horiseon Social Solution Services, Inc.
+            </p>
+    </footer>
 </body>
 
 </html>
