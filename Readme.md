@@ -74,6 +74,6 @@ Accesibility
 
 Screenshot of live site at provided URL:
 
-![Live site](./assets/images/Live%20site.jpg)
+![Live site](./Assets/images/Live%20site.jpg)
 
 Code edited by Michael Walters
